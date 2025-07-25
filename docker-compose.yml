@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: task_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DATABASE=/app/data/tasks.db
+    networks:
+      - task_network
+
+  tests:
+    build: .
+    container_name: task_tests
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE=/app/data/test_tasks.db
+    depends_on:
+      - app
+    networks:
+      - task_network
+
+networks:
+  task_network:
+    driver: bridge
