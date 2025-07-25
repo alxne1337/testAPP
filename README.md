@@ -59,5 +59,8 @@ Swagger UI: http://localhost:8000/docs
 ### Окружение
 
 Если производится локальный запуск то требуется создать файл .env с параметрами: 
-    DATABASE = 'tasks.db'
-    TEST_DB = 'tests/tasks.db'
+```bash
+DATABASE = 'tasks.db'
+TEST_DB = 'tests/tasks.db'
+```
+    
