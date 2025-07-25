@@ -15,8 +15,8 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/task-management-api.git
-cd task-management-api
+git clone https://github.com/alxne1337/testAPP.git
+cd testAPP
 ```
 2. Создайте и активируйте виртуальное окружение:
 ```bash
